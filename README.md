@@ -1,107 +1,129 @@
-# ⚡ KPI Visualization Dashboard – Energy Consumption Analysis
+#  KPI Visualization Dashboard – Energy Consumption Analysis
 
-This project is a complete KPI visualization notebook developed in **Google Colab**.  
-It analyzes historical energy consumption sessions and generates insights related to usage patterns, demand behavior, and system performance.
+This project provides a full KPI visualization workflow combining **Python** (Google Colab) and **Power BI** to analyze historical energy consumption sessions.  
+It delivers insights on usage patterns, demand behavior, load peaks, and system performance.
 
-The notebook provides a modular structure, with each section dedicated to a specific KPI or operational metric.
+The repository includes:
+- A complete **Python notebook** for data preprocessing & KPI computation  
+- A **Power BI dashboard** for business-focused visual analysis  
+- Clean documentation and screenshots for portfolio presentation  
 
----
 
-## 📊 **Key Metrics & Visualizations**
+# 📊 Python KPI Analysis (Google Colab)
 
-### 1️⃣ Peak Demand Time
-Identifies when energy usage is at its highest by:
+The notebook is structured into modular analytical blocks, each focusing on a specific KPI or operational metric.
+
+
+## 1️⃣ Peak Demand Time
+Identifies the periods with highest energy usage by:
 - Analyzing session start timestamps  
-- Cleaning missing or null data  
-- Plotting usage curves across different time periods  
+- Cleaning null or missing values  
+- Plotting usage curves over time  
 
 This helps detect **rush hours**, load peaks, and charging behavior patterns.
 
----
 
-### 2️⃣ Availability
-Evaluates system or plug availability through:
+## 2️⃣ Availability
+Evaluates system or plug availability by examining:
 - Missing session intervals  
 - Drop-off periods  
 - Data gaps  
-- Interval-based analysis  
+- Interval-based anomalies  
 
-Useful for assessing the **operational reliability** of the service.
+Supports assessment of overall **operational reliability**.
 
----
 
-### 3️⃣ Power Delivered
-Quantifies energy delivered to users by:
-- Summing `energy_wh`  
-- Analyzing distribution  
-- Identifying abnormal consumption patterns  
+## 3️⃣ Power Delivered
+Quantifies delivered energy using:
+- Aggregation of `energy_wh`  
+- Distribution analysis  
+- Outlier detection  
 
-Helps determine **energy usage efficiency** and system load.
+Useful to evaluate **energy efficiency** and load distribution.
 
----
 
-### 4️⃣ Plug-in Time
-Measures how long users keep the system engaged:
-- Start vs Stop timestamps  
-- Session duration analysis  
-- Outlier removal  
+## 4️⃣ Plug-in Time
+Measures how long users keep the system occupied:
+- Duration between start/stop  
+- Outlier cleaning  
+- Usage interval analysis  
 
-Supports operational optimization and **resource occupancy planning**.
+Enables planning of **resource occupancy** and optimization.
 
----
 
-### 5️⃣ Total Charging Sessions
-Calculates total sessions over time, including:
-- Daily totals  
-- Weekly/monthly trends  
+## 5️⃣ Total Charging Sessions
+Tracks overall system usage:
+- Daily/weekly/monthly demand  
 - Session distribution by plug or station  
+- Long-term trend visualization  
 
-Offers a high-level view of **service demand evolution**.
+Provides a strategic view of **service demand evolution**.
 
----
 
-### 6️⃣ Energy Consumption
-Aggregates delivered energy to visualize:
-- Consumption trends  
-- Seasonal patterns  
+## 6️⃣ Energy Consumption Trends
+Analyzes global consumption variations:
+- Seasonal/periodic patterns  
 - High-usage segments  
+- Energy forecasting foundations  
 
-Depending on the dataset, this can be used to predict future consumption and optimize infrastructure.
+Helps anticipate future upgrades and constraints.
 
----
 
-## 🧹 **Data Cleaning Steps**
-Throughout the notebook, you will find structured preprocessing such as:
+#  Data Cleaning & Preprocessing
 
+The notebook includes robust data-cleaning steps:
 - Handling missing timestamps (`start`, `stop`)  
 - Removing invalid or incomplete sessions  
-- Converting datetime columns  
-- Computing derived metrics (duration, energy per session, etc.)  
+- Datetime normalization & conversions  
+- Derived metrics (duration, energy/session, etc.)  
 
-This improves the **accuracy and reliability** of all KPIs.
+Ensures high-quality, reliable KPIs.
 
----
 
-## 🛠️ **Tools & Technologies**
+# 🛠 Tools & Technologies Used
 
 | Component | Description |
 |----------|-------------|
-| **Python** | Primary language |
-| **Pandas** | Data manipulation & cleaning |
-| **Matplotlib / Seaborn** | Visualization |
+| **Python** | Main analysis language |
+| **Pandas** | Data cleaning & transformation |
+| **Matplotlib / Seaborn** | Visualization libraries |
 | **Google Colab** | Execution environment |
-| **CSV dataset** | Historical energy consumption |
+| **CSV Dataset** | Historical consumption data |
 
 ---
 
-## ▶️ **How to Run the Notebook**
+# 📊 Power BI KPI Dashboard (Screenshots Only)
 
-1. Download the notebook:  
-   `KPI's_visualizations.ipynb`
+To complement the Python KPI analysis, the project includes a **Power BI interactive dashboard** designed for business and operational teams.
 
-2. Open it in Google Colab:  
-   https://colab.research.google.com/
+### ✔️ Operational Monitoring
+- Daily/weekly demand patterns  
+- Global consumption overview  
+- Detection of sudden usage changes  
 
-3. Upload your dataset and update the path if needed:  
-   ```python
-   data = pd.read_csv("/content/historical_consumption.csv")
+### ✔️ KPI Comparison & Trend Tracking
+- Power delivered trends  
+- Station/plug usage frequency  
+- Abnormal consumption identification  
+
+### ✔️ User Behavior Insights
+- Plug-in time distribution  
+- Session frequency  
+- Resource occupancy  
+
+## Dashboard Screenshots
+
+The following visuals are included in the `/powerbi` folder:
+
+Screenshots showcase dashboard pages while protecting sensitive or confidential information.  
+The `.pbix` file is **not provided** for data privacy reasons.
+
+
+## Tools Used for the Dashboard
+- **Power BI Desktop**  
+- **DAX**  
+- **Power Query**  
+- **Interactive visuals & slicers**  
+
+
+
