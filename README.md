@@ -1,12 +1,16 @@
-#  KPI Visualization Dashboard – Energy Consumption Analysis
+# ⚡ Energy Consumption – KPI Visualization Dashboard  
+*A complete analytics project combining Python (Colab) & Power BI*
 
-This project provides a full KPI visualization workflow combining **Python** (Google Colab) and **Power BI** to analyze historical energy consumption sessions.  
-It delivers insights on usage patterns, demand behavior, load peaks, and system performance.
+# 📘 Overview
 
-The repository includes:
-- A complete **Python notebook** for data preprocessing & KPI computation  
-- A **Power BI dashboard** for business-focused visual analysis  
-- Clean documentation and screenshots for portfolio presentation  
+This project provides an end-to-end analysis of **energy consumption sessions**, using both:
+
+- **Python** (Google Colab) — for data cleaning, KPI extraction, trend analysis  
+- **Power BI** — for business user-friendly dashboards and operational insights  
+
+It demonstrates technical skills across data preprocessing, KPI design, visualization, and BI storytelling.
+
+The goal is to help understand **when, how, and how much** energy is consumed — and identify patterns such as peak periods, abnormal behaviors, and usage efficiency.
 
 
 # 📊 Python KPI Analysis (Google Colab)
